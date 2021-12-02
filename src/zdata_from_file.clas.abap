@@ -1,0 +1,17 @@
+CLASS zdata_from_file DEFINITION INHERITING FROM ZABS_DATA
+  PUBLIC
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  METHODS: READ_DATA REDEFINITION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zdata_from_file IMPLEMENTATION.
+METHOD read_data.
+    WRITE: / 'Reading data from File'.
+  ENDMETHOD.                    "read_data
+ENDCLASS.

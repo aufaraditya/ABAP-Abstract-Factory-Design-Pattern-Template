@@ -1,0 +1,18 @@
+CLASS zprint_simple DEFINITION INHERITING FROM ZABS_PRINT
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  METHODS: WRITE_DATA REDEFINITION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zprint_simple IMPLEMENTATION.
+METHOD write_data.
+    WRITE: / 'Writing data in classic - This is actually classic'.
+  ENDMETHOD.                    "write_data
+ENDCLASS.
